@@ -4,10 +4,10 @@ VERSION=1.2
 PREFIX=/usr
 
 # scheme executable
-Scheme=$(PREFIX)/bin/scheme
+Scheme=/usr/local/bin/chez
 
 # target location for stex
-LIB=$(PREFIX)/lib/stex$(VERSION)
+LIB=./
 
 m := $(shell echo '(machine-type)' | $(Scheme) -q)
 
